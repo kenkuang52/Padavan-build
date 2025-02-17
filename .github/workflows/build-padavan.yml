@@ -129,9 +129,6 @@ jobs:
         #格式如下：
         #sed -i '/自定义项/d' .config
         #echo "自定义项=y" >> .config
-### Include "parted" utility (allow make GPT partitions). ~0.3MB
-sed -i '/CONFIG_FIRMWARE_INCLUDE_PARTED/d' .config
-echo "CONFIG_FIRMWARE_INCLUDE_PARTED=y" >> .config
 CONFIG_FIRMWARE_INCLUDE_PARTED=n
         #########################################################################################
         sudo ./clear_tree
